@@ -1,0 +1,16 @@
+{
+  "hash": "4a5400444db7ca4cd16d76df04aeadd5",
+  "result": {
+    "markdown": "---\nauthor: \"Ibrahim Abdullahi\"\ntitle: \"Curriculum Vitae\"\nformat:\n  html: \"default\"\ncvfooter:\n  left: \"mr.schochastics.net\"\n  right: \"github.com/schochastics\"\ncvcolor: 58748F #without `#`\ncvfont: \"raleway\" #texlive fonts like raleway,fetamont,gillius,comfortaa\ncvmeta:\n  - title: \"Status\"\n    left: \"Team Lead for Transparent Social Analytics, GESIS\"\n    right: \"Cologne, Germany\"\n  - title: \"Field\"\n    left: \"Software Engineering, Data Science\"\n    right: \"mr.schochastics.net\"\n  - title: \"Techs\"\n    left: \"R, bash, Python, javascript, Lua\"\n    right: \"david@schochastics.net\"\nexecute:\n  echo: false\n---\n\n::: {.cell}\n\n:::\n\n\n---\n",
+    "supporting": [
+      "cv_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

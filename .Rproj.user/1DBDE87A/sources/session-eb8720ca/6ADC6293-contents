@@ -1,0 +1,43 @@
+---
+author: "Ibrahim Abdullahi"
+title: "Curriculum Vitae"
+format:
+  html: "default"
+cvfooter:
+  left: "mr.schochastics.net"
+  right: "github.com/schochastics"
+cvcolor: 58748F #without `#`
+cvfont: "raleway" #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvmeta:
+  - title: "Status"
+    left: "Team Lead for Transparent Social Analytics, GESIS"
+    right: "Cologne, Germany"
+  - title: "Field"
+    left: "Software Engineering, Data Science"
+    right: "mr.schochastics.net"
+  - title: "Techs"
+    left: "R, bash, Python, javascript, Lua"
+    right: "david@schochastics.net"
+execute:
+  echo: false
+---
+
+```{r}
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, details) {
+
+    command_start <- "\\cvevent"
+
+    res <- paste0(
+        command_start, "{", tbl[[when]], "}", 
+        "{", tbl[[what]], "}",
+        "{", tbl[[where]], "}")
+    
+    tbl[[details]] <- sapply(tbl[[details]], function(x) paste0("{", x, "}", collapse = ","))
+    res <- paste0(res, "{",tbl[[details]],"}")
+
+    cat(res, sep = "\n")
+}
+```
+
+---

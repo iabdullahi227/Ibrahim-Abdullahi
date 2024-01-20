@@ -1,0 +1,14 @@
+{
+  "hash": "f0d7ec0d37fc4056e71498d382fe6d87",
+  "result": {
+    "markdown": "---\nauthor: \"David Schoch\"\ntitle: \"R Developer\"\nformat:\n  pdf: \"default\"\ncvfooter:\n  left: \"mr.schochastics.net\"\n  right: \"github.com/schochastics\"\ncvcolor: 58748F #without `#`\ncvfont: \"raleway\" #texlive fonts like raleway,fetamont,gillius,comfortaa\ncvmeta:\n  - title: \"Status\"\n    left: \"Team Lead for Transparent Social Analytics, GESIS\"\n    right: \"Cologne, Germany\"\n  - title: \"Field\"\n    left: \"Software Engineering, Data Science\"\n    right: \"mr.schochastics.net\"\n  - title: \"Techs\"\n    left: \"R, bash, Python, javascript, Lua\"\n    right: \"david@schochastics.net\"\nexecute:\n  echo: false\n---\n\n::: {.cell}\n\n:::\n\n\n---\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": null,
+    "postProcess": false
+  }
+}
