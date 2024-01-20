@@ -1,10 +1,8 @@
 {
-  "hash": "4a5400444db7ca4cd16d76df04aeadd5",
+  "hash": "415fd1e77a919e48ee52ec1a6ddbe04d",
   "result": {
-    "markdown": "---\nauthor: \"Ibrahim Abdullahi\"\ntitle: \"Curriculum Vitae\"\nformat:\n  html: \"default\"\ncvfooter:\n  left: \"mr.schochastics.net\"\n  right: \"github.com/schochastics\"\ncvcolor: 58748F #without `#`\ncvfont: \"raleway\" #texlive fonts like raleway,fetamont,gillius,comfortaa\ncvmeta:\n  - title: \"Status\"\n    left: \"Team Lead for Transparent Social Analytics, GESIS\"\n    right: \"Cologne, Germany\"\n  - title: \"Field\"\n    left: \"Software Engineering, Data Science\"\n    right: \"mr.schochastics.net\"\n  - title: \"Techs\"\n    left: \"R, bash, Python, javascript, Lua\"\n    right: \"david@schochastics.net\"\nexecute:\n  echo: false\n---\n\n::: {.cell}\n\n:::\n\n\n---\n",
-    "supporting": [
-      "cv_files"
-    ],
+    "markdown": "---\nauthor: \"Ibrahim Abdullahi\"\ntitle: \"Curriculum Vitae\"\noutput: \"html_document\"\ncvfooter:\ncvfont: \"raleway\"\nexecute:\n  echo: false\n---\n\n::: {.cell}\n\n:::\n\n\n# Professional Summary\n\nPassionate Economics Master's student skilled in translating economic theories into practical solutions through analytical thinking and quantitative methods. I have a robust foundation in economic modeling, statistical analysis, and empirical research, allowing me to apply theoretical knowledge to real-world economic challenges. I am currently a Research Assistant to Dr. MUstapha Immurana (Senior Research Fellow at University of Health and Allied Sciences (UHAS)) and a Graduate Teaching Assistant at Memorial University of Newfoundland and Labrador(MUN). I have a long standing experience in teachinf. Eager to contribute my academic rigor and analytical expertise to dynamic research or policy-oriented roles in the field of economics. \n\n\n# Education\n\n\n\n\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

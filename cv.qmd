@@ -1,23 +1,9 @@
 ---
 author: "Ibrahim Abdullahi"
 title: "Curriculum Vitae"
-format:
-  html: "default"
+output: "html_document"
 cvfooter:
-  left: "mr.schochastics.net"
-  right: "github.com/schochastics"
-cvcolor: 58748F #without `#`
-cvfont: "raleway" #texlive fonts like raleway,fetamont,gillius,comfortaa
-cvmeta:
-  - title: "Status"
-    left: "Team Lead for Transparent Social Analytics, GESIS"
-    right: "Cologne, Germany"
-  - title: "Field"
-    left: "Software Engineering, Data Science"
-    right: "mr.schochastics.net"
-  - title: "Techs"
-    left: "R, bash, Python, javascript, Lua"
-    right: "david@schochastics.net"
+cvfont: "raleway"
 execute:
   echo: false
 ---
@@ -40,4 +26,13 @@ cvevents <- function(tbl, when, what, where, details) {
 }
 ```
 
----
+# Professional Summary
+
+Passionate Economics Master's student skilled in translating economic theories into practical solutions through analytical thinking and quantitative methods. I have a robust foundation in economic modeling, statistical analysis, and empirical research, allowing me to apply theoretical knowledge to real-world economic challenges. I am currently a Research Assistant to Dr. MUstapha Immurana (Senior Research Fellow at University of Health and Allied Sciences (UHAS)) and a Graduate Teaching Assistant at Memorial University of Newfoundland and Labrador(MUN). I have a long standing experience in teachinf. Eager to contribute my academic rigor and analytical expertise to dynamic research or policy-oriented roles in the field of economics. 
+
+
+# Education
+
+
+
+
