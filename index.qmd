@@ -1,11 +1,7 @@
 ---
-title: "Ibrahim_ Abdullahi"
+title: "Ibrahim Abdullahi"
 ---
 
-This is a Quarto website.
+Hello,
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+I am Ibrahim Abdullahi, a graduate student of the department of Economics at Memorial University of Newfoundland and Labrador (MUN) and a research Assistant to Dr. Mustapha Immurana (Senior Research Fellow at University of Health and Allied Sciences). I also serve as a Graduate Teaching Assistant at Department of Economics MUN. My keen research interest span from Health Economics, Labor Economics, Environmental Economics, Energy Economics, Developmental Economics, Machine learning and Causal inference.
