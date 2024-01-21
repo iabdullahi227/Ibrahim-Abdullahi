@@ -1,3 +1,7 @@
 [1,"==> quarto preview --render all --no-watch-inputs --no-browse\n\n"]
 [1,"Rendering:\n"]
 [1,"\r[1/4] about.qmd\n"]
+[1,"\r\n\r\nprocessing file: about.qmd\r\n"]
+[1,"\r  |                                                          \r  |                                                    |   0%\r  |                                                          \r  |.................                                   |  33%                  \r  |                                                          \r  |...................................                 |  67% [unnamed-chunk-1]"]
+[1,"\r  |                                                          output file: about.knit.md\r\n\r\n\r  |....................................................| 100%                  \r                                                                                                            \r\n"]
+[1,"\r[2/4] contact.qmd\n"]
