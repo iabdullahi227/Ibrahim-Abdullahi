@@ -1,30 +1,14 @@
 ---
 author: "Ibrahim Abdullahi"
 title: "Curriculum Vitae"
-output: "html_document"
-cvfooter:
-cvfont: "raleway"
-execute:
-  echo: false
+
+
 ---
 
-```{r}
-#| label: cvevents
-cvevents <- function(tbl, when, what, where, details) {
+*Updated*: `r Sys.Date()`
 
-    command_start <- "\\cvevent"
-
-    res <- paste0(
-        command_start, "{", tbl[[when]], "}", 
-        "{", tbl[[what]], "}",
-        "{", tbl[[where]], "}")
-    
-    tbl[[details]] <- sapply(tbl[[details]], function(x) paste0("{", x, "}", collapse = ","))
-    res <- paste0(res, "{",tbl[[details]],"}")
-
-    cat(res, sep = "\n")
-}
-```
+PDF Version [here](docs/Curriculum_Vitae.pdf)
+   
 
 ## Contact Information
 

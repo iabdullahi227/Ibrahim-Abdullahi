@@ -30,15 +30,15 @@
   {
     "objectID": "cv.html",
     "href": "cv.html",
-    "title": "Curriculum Vitae",
+    "title": "Professional Summary",
     "section": "",
-    "text": "iabdullahi@mun.ca\n (709) 853-5838\nDepartment of Economics\n     Memorial University of Newfoundland and Labrador.\n     230 Elizabeth Avenue\n     St.John’s, NL, Canada\n     A1C 5S7"
+    "text": "Updated: r Sys.Date()\nPDF Version here"
   },
   {
     "objectID": "cv.html#contact-information",
     "href": "cv.html#contact-information",
-    "title": "Curriculum Vitae",
-    "section": "",
-    "text": "iabdullahi@mun.ca\n (709) 853-5838\nDepartment of Economics\n     Memorial University of Newfoundland and Labrador.\n     230 Elizabeth Avenue\n     St.John’s, NL, Canada\n     A1C 5S7"
+    "title": "Professional Summary",
+    "section": "Contact Information",
+    "text": "Contact Information\n iabdullahi@mun.ca\n (709) 853-5838\nDepartment of Economics\n     Memorial University of Newfoundland and Labrador.\n     230 Elizabeth Avenue\n     St.John’s, NL, Canada\n     A1C 5S7"
   }
 ]
