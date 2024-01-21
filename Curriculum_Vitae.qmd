@@ -2,7 +2,6 @@
 title: "Curriculum Vitae"
 author: "Ibrahim Abdullahi"
 format: pdf
-date: "`r Sys.Date()`"
 editor: visual
 ---
 

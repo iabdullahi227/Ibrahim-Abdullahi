@@ -5,7 +5,6 @@ title: "Curriculum Vitae"
 
 ---
 
-*Updated*: `r Sys.Date()`
 
 PDF Version [here](docs/Curriculum_Vitae.pdf)
    
