@@ -8,8 +8,9 @@ website:
     left:
       - href: index.qmd
         text: Home
+        
       - href: cv.qmd
-        text: CV
+        text: "{{< fa user-tie >}} CV"
 
 format:
   html:
