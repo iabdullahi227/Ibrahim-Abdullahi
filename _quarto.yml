@@ -11,6 +11,10 @@ website:
         
       - href: cv.qmd
         text: "{{< fa user-tie >}} CV"
+        
+    right:
+      - href: contact.qmd
+        text: "{{< fa envelope >}} Contact"
 
 format:
   html:

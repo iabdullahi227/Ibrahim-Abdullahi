@@ -1,0 +1,15 @@
+---
+title: "Contact Information"
+editor: visual
+---
+
+{{< fa envelope >}} [iabdullahi\@mun.ca](mailto:iabdullahi@mun.ca)
+
+{{< fa phone >}} (709) 853-5838
+
+{{< fa paper-plane >}}Department of Economics
+
+    Memorial University of Newfoundland and Labrador.\
+     230 Elizabeth Avenue\
+     St.John's, NL, Canada\
+     A1C 5S7

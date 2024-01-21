@@ -8,5 +8,8 @@
   "cv.qmd": {
     "cv.html": "4a37036f",
     "cv.tex": "4ff8a821"
+  },
+  "contact.qmd": {
+    "contact.html": "9d16552e"
   }
 }
