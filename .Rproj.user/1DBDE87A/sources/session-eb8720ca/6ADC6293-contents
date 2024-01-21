@@ -40,7 +40,7 @@ cvevents <- function(tbl, when, what, where, details) {
 
 # Professional Summary
 
-Passionate Economics Master's student skilled in translating economic theories into practical solutions through analytical thinking and quantitative methods. I have a robust foundation in economic modeling, statistical analysis, and empirical research, allowing me to apply theoretical knowledge to real-world economic challenges. I am currently a Research Assistant to Dr. MUstapha Immurana (Senior Research Fellow at University of Health and Allied Sciences (UHAS)) and a Graduate Teaching Assistant at Memorial University of Newfoundland and Labrador(MUN). I have a long standing experience in teaching. Eager to contribute my academic rigor and analytical expertise to dynamic research or policy-oriented roles in the field of economics. 
+Passionate Economics Master's student skilled in translating economic theories into practical solutions through analytical thinking and quantitative methods. I have a robust foundation in economic modeling, statistical analysis, and empirical research, allowing me to apply theoretical knowledge to real-world economic challenges. I am currently a Research Assistant to Dr. MUstapha Immurana (Senior Research Fellow at University of Health and Allied Sciences (UHAS)) and a Graduate Teaching Assistant at Memorial University of Newfoundland and Labrador(MUN). I have a long-standing experience in teaching. Eager to contribute my academic rigor and analytical expertise to dynamic research or policy-oriented roles in the field of economics. 
 
 
 # Education
@@ -78,10 +78,15 @@ Passionate Economics Master's student skilled in translating economic theories i
 - *Undergraduate*:
   
   - Economics Help center,Memorial University Newfoundland and Labrador (MUN).
+  
   - Introduction to Macroeconomics,Memorial University Newfoundland and Labrador (MUN).
-  -Intro to Mathematics For Economists, University of Ghana.
-  - Intro to Statistics For Economist, University of Ghana.
+  
+  -Introduction to Mathematics For Economists, University of Ghana.
+  
+  - Introduction to Statistics For Economist, University of Ghana.
+  
   - Applied Statistics and Mathematics for Economist, University of Ghana.
+  
   - Intermediate Macroeconomics,University of Ghana.
   -Intermediate Microeconomics,University of Ghana.
   
@@ -91,10 +96,13 @@ Passionate Economics Master's student skilled in translating economic theories i
 
 # Leadership Positions
 
--Head of Academic Board Committee (Insurance Student Association)
-University of Ghana.
+- Head of Academic Board Committee (Insurance Student Association)
+University of Ghana
+
 - Course Representative (University of Ghana ).
+
 - Member of the Academic Board Committee (Student Representative Council).
+
 University of Ghana
 - Board Member of Ghana Muslim Student Association (GMSA)
 Islamic Senior High School.
@@ -107,6 +115,7 @@ Islamic Senior High School.
 - How to write Quality Research paper/thesis ZilLearn
 
 - Introduction to Python Datacamp
+
 - Business Analytics with Excel Simplilearn
 
 - Python for Machine Learning Great Learning
