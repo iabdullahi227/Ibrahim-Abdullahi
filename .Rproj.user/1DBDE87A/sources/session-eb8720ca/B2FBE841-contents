@@ -15,7 +15,7 @@ website:
     right:
       - href: contact.qmd
         text: "{{< fa envelope >}} Contact"
-      - href: https://iabdullahi227.github.io/Ibrahim_-Abdullahi/
+      - href: https://github.com/iabdullahi227/Ibrahim_-Abdullahi
         icon: github
       - href: https://www.linkedin.com/in/ibrahimabdullahi227me
         icon: linkedin
