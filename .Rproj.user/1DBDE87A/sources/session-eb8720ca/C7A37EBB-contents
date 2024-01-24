@@ -1,0 +1,61 @@
+---
+title: |
+  | ECON 6051 
+  | Special Topics in Economics
+subtitle: |
+  | Advanced Microeconometrics
+  | Winter 2024
+  | Assignment 1
+author: Ibrahim Abdullahi (202382928)
+date: 01/09/2024
+format: 
+  pdf:
+    include-in-header: 
+      text: |
+        \usepackage{fancyhdr}
+        \fancypagestyle{style1}{
+        \fancyhf{}
+        \fancyhead[L]{ECON 6051}
+        \fancyhead[R]{Assignment 1}
+        \fancyfoot[C]{\thepage}
+        \renewcommand{\headrulewidth}{0.4pt}
+        }
+        \pagestyle{style1}
+editor: visual
+---
+
+\thispagestyle{style1}
+
+\vspace{-1in}
+
+# Questions
+
+# Quarto
+
+Create a personal Quarto website hosted on GitHup pages. For this question, you only have to write the link to your page. Please see the video tutorial entitled "Create_Quarto_Website" posted on Nexus. For reference, you can check out my GitHub repository at https://github.com/clairl/clairl.github.io (be sure to check out the "\_quarto.yml" file for help with the navigation bar). Your website should include the following:
+
+An "Index" or "Home" page. This page should include the following:
+
+Your name
+
+Your photo
+
+Your credentials
+
+An "About Me" section that provides a brief (one paragraph) introduction to yourself.
+
+A Curriculum Vitae page
+
+You may choose to upload a file or write your info on the page.
+
+Contact Information
+
+Navigation bar with "Home", "CV", and "Contact" Buttons. The navigation bar is edited in the "\_quarto.yml" file.
+
+1.  The link to my website: <https://iabdullahi227.github.io/Ibrahim-Abdullahi/>
+
+## Theory
+
+2.  Define the following terms in a sentence (or short paragraph) and state the formula if appropriate.
+
+> a)  Heteroskedasticity : is the systematic change in the spread of the residuals over the range of measured values. That is , the variance of the error term varies across observations.

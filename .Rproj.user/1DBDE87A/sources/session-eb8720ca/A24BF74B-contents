@@ -1,0 +1,117 @@
+---
+title: |
+  | ECON 6051 
+  | Special Topics in Economics
+subtitle: |
+  | Advanced Microeconometrics
+  | Winter 2024
+  | Assignment 1
+format: 
+  pdf:
+    include-in-header: 
+      text: |
+        \usepackage{fancyhdr}
+        \fancypagestyle{style1}{
+        \fancyhf{}
+        \fancyhead[L]{ECON 6051}
+        \fancyhead[R]{Assignment 1}
+        \fancyfoot[C]{\thepage}
+        \renewcommand{\headrulewidth}{0.4pt}
+        }
+        \pagestyle{style1}
+editor: visual
+---
+
+\thispagestyle{style1}
+
+\vspace{-1in}
+
+## Due Date {.unnumbered}
+
+Please submit your assignment by **5PM on Friday January 26th**. To submit your assignment, upload your assignment PDF and Quarto document. If you choose to use Stata for your analysis, please upload a copy of your log file.
+
+## Directions
+
+Answer all questions in the space provided, and use Quarto and/or LaTeX. The assignment is divided into three sections, Quarto, Econometric Theory, and Analysis.
+
+# Questions
+
+## Quarto
+
+1.  Create a personal Quarto website hosted on GitHup pages. For this question, you only have to write the link to your page. Please see the video tutorial entitled "Create_Quarto_Website" posted on Nexus. For reference, you can check out my GitHub repository at <https://github.com/clairl/clairl.github.io> (be sure to check out the "\_quarto.yml" file for help with the navigation bar). Your website should include the following:
+    i)  An "Index" or "Home" page. This page should include the following:
+        -   Your name
+        -   Your photo
+        -   Your credentials
+        -   An "About Me" section that provides a brief (one paragraph) introduction to yourself.
+    ii) A Curriculum Vitae page
+        -   You may choose to upload a file or write your info on the page.
+    iii) Contact Information
+    iv) Navigation bar with "Home", "CV", and "Contact" Buttons. The navigation bar is edited in the "\_quarto.yml" file.
+
+\vspace{1in}
+
+## Theory
+
+2.  Define the following terms in a sentence (or short paragraph) and state the formula if appropriate.
+
+> a)  Heteroskedasticity
+
+\vspace{1in}
+
+> b)  White Heteroskedasticity-Consistent Estimator (Use matrix notation in your definition)
+
+\vspace{1in}
+
+> c)  Bias of an estimator\vspace{1in}
+
+3.  Consider the ML and OLS estimators of the population variance, $\tilde\sigma^2=n^{-1}\sum(X_i-\bar X)^2$ and $\hat\sigma^2=(n-1)^{-1}\sum(X_i-\bar X)^2$, where the $X_i$ represent independent draws from a common distribution.\
+    \
+    Assume that $X\sim N(\mu,\sigma^2)$. What is the (theoretical) finite-sample bias of $\hat\sigma^2$ and $\tilde\sigma^2$?
+
+\vspace{1in}
+
+## Analysis
+
+4.  In this question we compare standard errors based on (incorrect) asymptotic assumptions with those based on alternate (appropriate) estimator (White). Consider one sample drawn from the following data generating process (DGP) which we will simulate in `R`:
+
+```{r}
+set.seed(123)
+n <- 25
+x <- rnorm(n,mean=0.0,sd=1.0)
+beta0 <- 1
+beta1 <- 0
+## x is irrelevant in this model, the data generating process is as follows:
+dgp <- beta0 + beta1*x
+## The residual is heteroskedastic by construction
+e <- x^2*rnorm(n,mean=0.0,sd=1.0)
+y <- dgp + e
+```
+
+> a)  Compute the OLS estimator of $\beta_2$ and its standard error using the `lm()` command in R or the `reg` command in Stata for the model $y_i=\beta_1+\beta_2 x_i+\epsilon_i$ based on the DGP given above. Next, compute the standard error of $\hat\beta_2$ by computing $\hat\sigma^2(X'X)^{-1}$ in using matrix commands in `R` or `Stata`, and verify that the two standard error estimates are identical.
+
+\vspace{1in}
+
+> b)  Compute White's heteroskedasticity consistent covariance matrix estimator (you may use the written functions, e.g., `hccm` function with the option `type="hc0"` from the `R` package `car`) and report the White estimator of the standard error of $\hat\beta_2$. Compare this with that from a) above.
+
+\vspace{1in}
+
+5.  Use the state-level data on murder rates and executions in MURDER for the following exercise. If you are using `R`, save the file "murder.RData" to your working directory and use the command `load(Murder.RData)`.
+
+> a)  Consider the unobserved effects model $$mrdrte_{it}=\eta_t+\beta_1exec_{it}+\beta_2unem{it}+a_i+u_i$$ where $\eta_t$ simply denotes different year intercepts and $a_i$ is the unobserved state effect. If past executions of convicted murderers have a deterrent effect, what should be the sign of $\beta_1$? What sign do you think $\beta_2$ should have? Explain?
+
+\vspace{1in}
+
+> b)  Using just the years 1990 and 1993, estimate the population equation from part i) by pooled OLS.
+
+\vspace{1in}
+
+> c)  Now, using 1990 and 1993, estimate the equation by fixed effects. You may use first differencing because yo are only using two years of data. Is there evidence of a deterrent effect? How strong?
+
+\vspace{1in}
+
+> d)  Compute the heteroskedasticity-robust standard error for the estimation in part b).
+
+\vspace{1in}
+
+> e)  Use all three years of data and estimate the model by fixed effects. Discuss the size and statistical significance of the deterrent effect compared with only using 1990 and 1993.
