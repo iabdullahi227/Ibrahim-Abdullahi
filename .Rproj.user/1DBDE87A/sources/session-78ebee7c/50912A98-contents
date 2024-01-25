@@ -1,0 +1,4 @@
+options(repos = c(cran = "https://cran.rstudio.com"))
+
+install.packages("car")
+library(car)

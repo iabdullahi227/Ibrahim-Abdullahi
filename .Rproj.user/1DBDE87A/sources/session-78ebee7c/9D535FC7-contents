@@ -1,0 +1,138 @@
+---
+title: |
+  | ECON 6051 
+  | Special Topics in Economics
+subtitle: |
+  | Advanced Microeconometrics
+  | Winter 2024
+  | Assignment 1
+author: Ibrahim Abdullahi (202382928)
+date: 01/09/2024
+format: 
+  pdf:
+    include-in-header: 
+      text: |
+        \usepackage{fancyhdr}
+        \fancypagestyle{style1}{
+        \fancyhf{}
+        \fancyhead[L]{ECON 6051}
+        \fancyhead[R]{Assignment 1}
+        \fancyfoot[C]{\thepage}
+        \renewcommand{\headrulewidth}{0.4pt}
+        }
+        \pagestyle{style1}
+editor: visual
+---
+
+\thispagestyle{style1}
+
+\vspace{-1in}
+
+# Questions
+
+# Quarto
+
+Create a personal Quarto website hosted on GitHup pages. For this question, you only have to write the link to your page. Please see the video tutorial entitled "Create_Quarto_Website" posted on Nexus. For reference, you can check out my GitHub repository at https://github.com/clairl/clairl.github.io (be sure to check out the "\_quarto.yml" file for help with the navigation bar). Your website should include the following:
+
+An "Index" or "Home" page. This page should include the following:
+
+Your name
+
+Your photo
+
+Your credentials
+
+An "About Me" section that provides a brief (one paragraph) introduction to yourself.
+
+A Curriculum Vitae page
+
+You may choose to upload a file or write your info on the page.
+
+Contact Information
+
+Navigation bar with "Home", "CV", and "Contact" Buttons. The navigation bar is edited in the "\_quarto.yml" file.
+
+1.  The link to my website: <https://iabdullahi227.github.io/Ibrahim-Abdullahi/>
+
+## Theory
+
+2.  Define the following terms in a sentence (or short paragraph) and state the formula if appropriate.
+
+> a)  Heteroskedasticity : is the systematic change in the spread of the residuals over the range of measured values. That is , the variance of the error term varies across observations.
+>
+> <!-- -->
+>
+> b)  White Heteroskedasticity-Consistent Estimator (Use matrix notation in your definition)
+>
+> c)  Bias of an estimator\vspace{1in}
+
+3.  Consider the ML and OLS estimators of the population variance, $\tilde\sigma^2=n^{-1}\sum(X_i-\bar X)^2$ and $\hat\sigma^2=(n-1)^{-1}\sum(X_i-\bar X)^2$, where the $X_i$ represent independent draws from a common distribution.\
+    \
+    Assume that $X\sim N(\mu,\sigma^2)$. What is the (theoretical) finite-sample bias of $\hat\sigma^2$ and $\tilde\sigma^2$?
+
+\vspace{1in}
+
+## Analysis
+
+4.  In this question we compare standard errors based on (incorrect) asymptotic assumptions with those based on alternate (appropriate) estimator (White). Consider one sample drawn from the following data generating process (DGP) which we will simulate in `R`:
+
+```{r, echo=FALSE}
+rm(list=ls())
+set.seed(123)
+n <- 25
+x <- rnorm(n,mean=0.0,sd=1.0)
+beta0 <- 1
+beta1 <- 0
+dgp <- beta0 + beta1*x
+e <- x^2*rnorm(n,mean=0.0,sd=1.0)
+y <- dgp + e
+
+```
+
+a)  Compute the OLS estimator of $\beta_2$ and its standard error using the `lm()` command in R or the `reg` command in Stata for the model $y_i=\beta_1+\beta_2 x_i+\epsilon_i$ based on the DGP given above. Next, compute the standard error of $\hat\beta_2$ by computing $\hat\sigma^2(X'X)^{-1}$ in using matrix commands in `R` or `Stata`, and verify that the two standard error estimates are identical
+
+```{r, echo = FALSE}
+# Fit the linear model
+
+model <- lm(y ~ x)
+
+# Extract the coefficient estimates and their standard errors
+beta2_hat <- coef(model)[2]
+se_beta2_lm <- summary(model)$coefficients[2, "Std. Error"]
+
+# Compute the standard error using matrix commands
+X <- cbind(1, x)
+y_hat <- predict(model)
+residuals <- y - y_hat
+sigma_hat_squared <- sum(residuals^2) / (length(y) - 2)  # (n - p), where p is the number of coefficients including intercept
+X_transpose_X_inv <- solve(t(X) %*% X)
+se_beta2_matrix <- sqrt(sigma_hat_squared * X_transpose_X_inv[2, 2])
+
+# Print the results
+cat("OLS Estimator of beta2:", beta2_hat, "\n")
+cat("Standard Error of beta2 (lm):", se_beta2_lm, "\n")
+cat("Standard Error of beta2 (matrix):", se_beta2_matrix, "\n")
+```
+
+b)  Compute White's heteroskedasticity consistent covariance matrix estimator (you may use the written functions, e.g., `hccm` function with the option `type="hc0"` from the `R` package `car`) and report the White estimator of the standard error of $\hat\beta_2$. Compare this with that from a) above.
+
+```{r, echo=FALSE}
+library(car)
+library(carData)
+# Obtain White's heteroskedasticity-consistent covariance matrix
+vcov_white <- hccm(model, type = "hc0")
+
+# Extract the standard error of beta2 from the White's covariance matrix
+se_beta2_white <- sqrt(vcov_white[2, 2])
+
+cat("Standard Error of beta2 (White):", se_beta2_white, "\n")
+```
+
+5.  Use the state-level data on murder rates and executions in MURDER for the following exercise. If you are using `R`, save the file "murder.RData" to your working directory and use the command `load(Murder.RData)`.
+
+> a)  Consider the unobserved effects model $$mrdrte_{it}=\eta_t+\beta_1exec_{it}+\beta_2unem{it}+a_i+u_i$$ where $\eta_t$ simply denotes different year intercepts and $a_i$ is the unobserved state effect. If past executions of convicted murderers have a deterrent effect, what should be the sign of $\beta_1$? What sign do you think $\beta_2$ should have? Explain?
+>
+> ```{r}
+> load("murder.RData")
+>
+> ```

@@ -1,0 +1,7 @@
+"0","# Fit the linear model"
+"0",""
+"0","model <- lm(y ~ x)"
+"0",""
+"0","# Extract the coefficient estimates and their standard errors"
+"0","beta2_hat <- coef(model)[2]"
+"0","se_beta2_lm <- summary(model)$coefficients[2, ""Std. Error""]"

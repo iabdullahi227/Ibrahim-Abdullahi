@@ -1,0 +1,4 @@
+"0","model <- lm(y ~ x)"
+"0",""
+"0","# Obtain White's heteroskedasticity-consistent covariance matrix"
+"0","vcov_white <- hccm(model, type = ""hc0"")"

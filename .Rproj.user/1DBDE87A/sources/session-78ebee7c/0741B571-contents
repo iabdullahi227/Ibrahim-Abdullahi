@@ -1,0 +1,91 @@
+rm(list=ls())
+# load package and attach data
+library(AER)
+#require()
+
+data("CPSSWEducation")
+attach(CPSSWEducation)
+
+# get an overview
+summary(CPSSWEducation)
+
+# estimate a simple regression model
+# Dependent variable (y): earnings
+# Predictor variable (x): education
+
+labor_model <- lm(earnings ~ education, 
+                  data = CPSSWEducation)
+
+# plot observations and add the regression line
+plot(education, 
+     earnings,
+     xlab="Education",
+     ylab="Earnings",
+     ylim = c(0, 150))
+
+abline(labor_model, 
+       col = "steelblue", 
+       lwd = 2)
+
+# print the contents of labor_model to the console
+labor_model
+
+# Store model summary in 'model'
+model <- summary(labor_model)
+
+# Extract the standard error of the regression from model summary
+SER <- model$sigma
+
+# \sum(x-\bar{x})^2
+# Compute the variation in 'education'
+# var(education) = \sum(x-\bar{x})^2/(n-1)
+V <- (nrow(CPSSWEducation)-1) * var(education)
+
+# Compute the standard error of the slope parameter's estimator and print it
+SE.beta_1.hat <- sqrt(SER^2/V)
+SE.beta_1.hat
+#> [1] 0.06978281
+
+
+# Use logical operators to see if the value computed by hand matches the one provided 
+# in mod$coefficients. Round estimates to four decimal places
+round(model$coefficients[2, 2], 4) == round(SE.beta_1.hat, 4)
+
+# Matrix Notation
+
+X_0 <- rep(1, nrow(CPSSWEducation))
+X_1 <- education
+X <- data.frame(X0 = X_0,
+                X1 = X_1)
+
+X <- as.matrix(X)
+Y <- as.matrix(earnings)
+
+# \hat\{beta} = (X'X)^(-1)X'Y
+
+beta <- solve(t(X)%*%X)%*%t(X)%*%Y
+
+# \sigma^2(X'X)
+
+res <- Y-X%*%beta
+
+e <- as.matrix(res)
+
+n <- nrow(CPSSWEducation)
+k <- ncol(X)
+
+VCV <- 1/(n-k)*as.numeric(t(e)%*%e)*solve(t(X)%*%X)
+
+StdErr <- sqrt(diag(VCV))
+
+## Heteroskedastic-robust standard errors
+
+vcov <- vcovHC(labor_model, type = "HC0")
+
+robust_se <- sqrt(diag(vcov))
+robust_se
+
+
+
+
+

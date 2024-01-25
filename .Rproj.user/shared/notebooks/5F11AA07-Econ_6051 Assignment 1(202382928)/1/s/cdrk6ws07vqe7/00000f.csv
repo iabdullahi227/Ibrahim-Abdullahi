@@ -1,0 +1,7 @@
+"0","model <- lm(y ~ x)"
+"0",""
+"0","# Obtain White's heteroskedasticity-consistent covariance matrix"
+"0","vcov_white <- hccm(model, type = ""hc0"")"
+"0",""
+"0","# Extract the standard error of beta2 from the White's covariance matrix"
+"0","se_beta2_white <- sqrt(vcov_white[2, 2])"
