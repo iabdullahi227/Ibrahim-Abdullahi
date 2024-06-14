@@ -1,10 +1,24 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "iabdullahi227.github.io",
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "PDF Version here"
+  },
+  {
+    "objectID": "cv.html#contact-information",
+    "href": "cv.html#contact-information",
+    "title": "Curriculum Vitae",
+    "section": "Contact Information",
+    "text": "Contact Information\n iabdullahi@mun.ca\n (709) 853-5838\nDepartment of Economics\n     Memorial University of Newfoundland and Labrador.\n     230 Elizabeth Avenue\n     St.John’s, NL, Canada\n     A1C 5S7"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact Information",
+    "section": "",
+    "text": "iabdullahi@mun.ca\n (709) 853-5838\n Department of Economics\n     Memorial University of Newfoundland and Labrador.\n     230 Elizabeth Avenue\n     St.John’s, NL, Canada\n     A1C 5S7"
   },
   {
     "objectID": "about.html",
@@ -12,5 +26,19 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ibrahim_ Abdullahi",
+    "section": "",
+    "text": "Graduating Teaching Assistant\nDepartment of Economics\nMemorial University of Newfoundland and Labrador (MUN)\nResearch Assistant\nMustapha Immurana, PhD Economics\nUniversity of Health and Allied Sciences (UHAS)"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Ibrahim_ Abdullahi",
+    "section": "About",
+    "text": "About\nI am Ibrahim Abdullahi, a graduate student of the department of Economics at Memorial University of Newfoundland and Labrador (MUN) and a research Assistant to Dr. Mustapha Immurana (Senior Research Fellow at University of Health and Allied Sciences). I also serve as a Graduate Teaching Assistant at Department of Economics MUN. I have a keen interest in Econometrics, Economic Theory, Insurance & Risks, Data Analytics, Machine learning and Causal inferences. My research span from Health economics, Labor Economics, Energy Economics, Environmental Economics and a long- standing Casual inferences"
   }
 ]

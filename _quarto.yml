@@ -2,18 +2,26 @@ project:
   type: website
   output-dir: docs
 
-
 website:
-  title: "iabdullahi227.github.io"
+  title: "Ibrahim_ Abdullahi"
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: "{{< fa house >}} Home"
+      - href: cv.qmd
+        text: "{{< fa user-tie >}} CV"
+        
+    right:
+      - href: contact.qmd
+        text: "{{< fa envelope >}} Contact"
+      - href: https://github.com/iabdullahi227/Ibrahim_-Abdullahi
+        icon: github
+      - href: https://www.linkedin.com/in/ibrahimabdullahi227me
+        icon: linkedin
 
 format:
   html:
-    theme: cosmo
+    theme: pulse
     css: styles.css
     toc: true
 

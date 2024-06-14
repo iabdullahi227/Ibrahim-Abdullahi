@@ -1,0 +1,16 @@
+---
+title: "maths"
+format: pdf
+---
+
+$\text{Var}[\text{b}| x] = \sigma (\mathbf{X'X})^{-1}$
+
+$$
+\text{Var}[\beta | X] = \sigma^2 (\mathbf{X'X})^{-1} = (\mathbf{X'X})^{-1} \mathbf{X'\left(\sigma^2I\right)X} = (\mathbf{X'X})^{-1} \sigma^2 \mathbf{X'X} = \sigma^2 \sum_{i=1}^{n} \mathbf{x_i'x_i} (\mathbf{X'X})^{-1}
+$$
+
+$$
+\text{Var}[\beta | X] = \sigma^2 (\mathbf{X'X})^{-1} = (\mathbf{X'X})^{-1} \mathbf{X'\left(\sigma^2I\right)X} = (\mathbf{X'X})^{-1} \sigma^2 \mathbf{X'X} = \sigma^2 \sum_{i=1}^{n} \mathbf{x_i'x_i} (\mathbf{X'X})^{-1}
+$$
+
+$E(\hat{\sigma}^{}2) = \frac{n-1}{n} \sigma$
